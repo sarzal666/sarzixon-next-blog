@@ -1,17 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import DefaultTheme from "./themes/DefaultTheme";
-import Layout from "./components/Layout";
-import Header from "./components/Header";
+import Layout from "../components/Layout";
 
 export default function Home() {
     return (
-        <>
-            <DefaultTheme>
-                <Layout>
-                    <Header page="home" />
-                </Layout>
-            </DefaultTheme>
-        </>
+        <Layout>
+
+        </Layout>
     )
 }
