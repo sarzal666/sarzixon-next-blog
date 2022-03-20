@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     background: ${ theme.color.cyberpunkNavy };
     font-family: ${ theme.fontFamily.paragraph }, monospace;
+    font-size: 16px;
     color: #fff;
   }
 `;
