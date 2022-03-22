@@ -1,10 +1,13 @@
 import styled, {css} from "styled-components";
 import Link from "next/link";
 import FullFlex from "./styledComponents/FullFlex";
+import HeaderDecorator from "./styledComponents/HeaderDecorator";
 
 const StyledHeader = styled(FullFlex)`
-  height: 120px;
+  height: 100px;
   padding-top: 15px;
+  flex-direction: column;
+  align-items: initial;
 `;
 
 const StyledNav = styled(FullFlex)``;
@@ -54,6 +57,7 @@ export default function Header() {
                     </StyledListElement>
                 </StyledList>
             </StyledNav>
+            <HeaderDecorator />
         </StyledHeader>
     );
 }

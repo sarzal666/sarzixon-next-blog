@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Header from "./Header";
-
+import FullFlex from "./styledComponents/FullFlex";
 
 const StyledLayout = styled.div`
   width: 100%;
@@ -10,13 +10,16 @@ const StyledLayout = styled.div`
    font-size: ${({theme : {fontSize}}) => fontSize.xl};
 `;
 
+const StyledMain = styled(FullFlex)`
+  padding: 5px;
+`;
 function Layout(props) {
     return (
         <StyledLayout>
             <Header />
-            <main>
+            <StyledMain as="main">
                 {props.children}
-            </main>
+            </StyledMain>
         </StyledLayout>
     )
 }
